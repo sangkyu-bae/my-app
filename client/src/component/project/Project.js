@@ -81,7 +81,7 @@ function Project(props) {
     return (
         <div className='containsr'>
             <div className='btn_group'>
-                <button id='stop_btn' onClick={changeStopMode}>멈춤</button>
+                <button id='stop_btn' onClick={changeStopMode}>멈s춤</button>
                 <button id='start_btn' onClick={changeStartMode}>자동 </button>
             </div>
      
