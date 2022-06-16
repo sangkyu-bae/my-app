@@ -1,0 +1,56 @@
+.project_container{
+    display: flex;
+    width: 100%;
+}
+.project_img_box{
+    flex:0.8;
+}
+.project_side_box{
+    border-left: 2px solid gray;
+    flex:0.2;
+    width: 0;
+}
+.borders_right{
+    border-right:2px solid gray;
+}
+
+.scond_img_container{
+    border:1px solid gray;
+}
+.first{
+    border-right:1px solid gray ;
+}
+.scond_sub_img_box{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#stop_btn{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    margin-right:-4px;
+}
+#start_btn{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 3px;
+}
+
+.btn_group button{
+    border: 1px solid skyblue;
+
+    background-color: rgba(0,0,0,0);
+    color: skyblue;
+    padding: 5px;
+}
+.btn_group{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.btn_group button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: skyblue;
+}

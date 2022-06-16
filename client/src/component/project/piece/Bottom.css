@@ -1,0 +1,43 @@
+.img_container{
+    width: 100%;
+    height: 600px;
+}
+.img_flex_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main_img_box{
+    /* flex:0.4; */
+    width: 0;
+    flex:0.5;
+    height: 100%;
+}
+/* .sub_img_box{
+    flex:0.2;
+    height: 100%;
+} */
+img{
+    object-fit: fill;
+}
+.scond_box{
+    position: relative;
+}
+.scond_main_img_box{
+    width: 100%;
+    height: 100%;
+}
+.scond_sub_img_box{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.sss .slick-next{
+    top:58%;
+}
+.sss .slick-prev{
+    top:58%;
+}
