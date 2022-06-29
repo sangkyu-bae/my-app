@@ -9,6 +9,7 @@ import Update from './component/mainSection/update/Update';
 import JoinForm from './component/login/JoinForm';
 import Login from './component/login/Login';
 import Project from './component/project/Project';
+import Insert from './component/mainSection/insertTest/Insert';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/joinForm" element={<JoinForm/>}/>
         <Route path="/login"  element={<Login isLogin={isLogin}/>}/>
         <Route path="/project-test" element={<Project></Project>}/>
+        <Route path="/insert-test" element={<Insert></Insert>}/>
       </Routes>
     </BrowserRouter>
   );

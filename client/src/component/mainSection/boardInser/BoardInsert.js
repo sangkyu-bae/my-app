@@ -118,10 +118,6 @@ function BoardInsert(props) {
         reader.onload=()=>{
             setImgSrc(reader.result);
         }
-       
-
-
-        
     }
    
     useEffect(()=>{

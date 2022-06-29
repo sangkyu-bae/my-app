@@ -80,10 +80,50 @@ function Project(props) {
     }
     return (
         <div className='containsr'>
-            <div className='btn_group'>
-                <button id='stop_btn' onClick={changeStopMode}>멈s춤</button>
-                <button id='start_btn' onClick={changeStartMode}>자동 </button>
+            <div className='option_box'>
+                <div className='btn_group'>
+                    <div className='first_boxs'>
+                        <button id='stop_btn' onClick={changeStopMode}>멈춤</button>
+                        <button id='start_btn' onClick={changeStartMode}>자동 </button> 
+                    </div>
+                </div>
+                <div className='option_checkbox'>
+                    <div className='scond_boxs'>
+                        <div className='mode_name'>
+                            AMI Mode
+                        </div>
+                        <div className='check_container'>
+                                <div className='select_box'>
+                                    <label className='test_box' htmlFor="pet-select">Select Payload:</label>
+
+                                    <select className='test_boxs' name="pets" id="pet-select">
+                                        <option value="">AMI</option>
+                                    </select>
+
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                    <label className="form-check-label" htmlFor="flexRadioDefault1">
+                                        FD
+                                    </label>
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                                    <label className="form-check-label" htmlFor="flexRadioDefault2">
+                                        ELA
+                                    </label>
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                                    <label className="form-check-label" htmlFor="flexRadioDefault2">
+                                        LA
+                                    </label>
+                                </div>
+                        </div>
+                        <div className='text_box'>
+                            <span className='span_co'><span className='blue_text'>UTC</span> 2022-06-24 06:34:54 </span>
+                            <span className='span_co'><span className='blue_text'>KST</span> 2022-06-24 15:34:54</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+           
      
             <div className='project_container'>
                 

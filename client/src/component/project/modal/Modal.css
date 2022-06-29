@@ -25,7 +25,7 @@
 .xbox{
     position: absolute;
     top: 5%;
-    right: 5%;
+    right: 3%;
     z-index: 50;
 }
 .xbox, path :hover{
@@ -34,4 +34,107 @@
 
 .modal .card :hover{
     cursor: Auto;
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+}
+
+.settings_name{
+    background-color: black;
+    height: 3%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 180%;
+}
+.project_img{
+    position: relative;
+}
+.move_container{
+     z-index: 2;
+    position: absolute;
+    top: 2.2em;
+    left: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.2em 0.5em;
+    width: 70%;
+    background: rgba( 255, 255, 255, .8);
+    opacity: 1;
+    height: 2.5%;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.play_time_box {
+    padding: 0.2em 1.7em 0.2em 0.4em;
+    border: 1px solid #999;
+    font-size: 13px;
+}
+.buttons{
+    width: 4%;
+    padding: 0.2em 0.5em 0.1em 0.4em;
+    background: white;
+    border: black;
+    border-radius: 5px;
+    margin: 0 0.2em;
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.sliderWrap{
+    margin-left: 3%;
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+.stepDot{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -0.8em;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 0.55em;
+    width: 100%;
+}
+i{
+    border-left: 2px solid #aaa;
+    height: 1.5em;
+    box-sizing: border-box;
+}
+.silder{
+    position: relative;
+    align-self: center;
+    flex-grow: 1;
+    padding: 0 0.5em;
+}
+.txtTime{
+    align-self: center;
+    padding: 0 0.5em;
+}
+
+.Pauseas{
+    background: #a0a0a0;
+    opacity: 1;
+}
+.Pauseas:hover{
+    cursor:not-allowed;
+}
+.txtTime{
+    display: inline-block;
+    flex: 0.2;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold
 }

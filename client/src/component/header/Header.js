@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { setUser } from '../module/loginReducer';
-import './Header.css';
+ import './Header.css';
 function Header(props) {
 	const isLogin=props.isLogin;
 
@@ -21,9 +21,23 @@ function Header(props) {
 	}
 	if(isLogin){
 		setHead=
+		<>
+		<Link to="/project-test">
+			<div className="navbar-nav">
+				<span className='header_nav'>test</span>
+			</div>
+		</Link>
+		<Link to="/insert-test">
+			<div className="navbar-nav">
+				<span className='header_nav'>등록테스트</span>
+			</div>
+		</Link>
         <div className="navbar-nav" onClick={onLogout}>
 			<span className='header_nav'>LogOut</span>
 		</div>
+	
+		</>
+
 
 	}else{
 		setHead=	<Link to="/login">
@@ -69,6 +83,7 @@ function Header(props) {
 		</div>
 		</Link> */}
 	</div>
+	
     );
 }
 

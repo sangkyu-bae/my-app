@@ -2,6 +2,8 @@ const express =require('express');
 const db=require("../../../server/config/dbConfig");
 
 const mainRouter=express.Router();
+const multer =require("multer");
+const { upload } = require('../../util/formTest');
 
 mainRouter.get("/board",(req,res)=>{
     let sql=`
@@ -69,4 +71,27 @@ mainRouter.delete("/board/:id",(req,res)=>{
         })
 })
 
+mainRouter.post("/test-img",upload.single("img"), (req,res)=>{
+   let file= req.file;
+
+   const userId= req.body.userId;
+
+   console.log(userId);
+   const sql=`INSERT INTO file VALUES(null, ?,?)`
+
+   const fileName=file.filename;
+
+   const params=[fileName,userId] ;
+
+   db.query(sql,params,
+    (err,data)=>{
+        if(!err){
+            res.send("sucess");
+        }else{
+            res.send(err);
+        }
+    })
+
+   console.log(file);
+})
 module.exports=mainRouter; 
